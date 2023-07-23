@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Popis webu pro vyhledávače -->
+    <meta name="description"
+        content="Vítejte na našem webu PojištěníApp, kde můžete spravovat a sledovat informace o pojištěncích. Zde najdete seznam aktuálně pojištěných osob a možnost přidat nového pojištěnce do databáze. Přehledné a jednoduché ovládání umožňuje snadnou správu vašich pojištěných osob.">
+
+    <!-- Klíčová slova pro vyhledávače -->
+    <meta name="keywords"
+        content="pojištění, pojištěnci, pojišťovna, pojistka, pojišťování, správa pojištění, nový pojištěnec, pojištěníApp">
+
+    <!-- Styly pro stránku -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Název stránky -->
+    <title>Pojistenci</title>
+</head>
+
+<body>
+    <article>
+
+        <!-- Hlavička stránky s navigací -->
+        <header>
+            <nav class="fixed-top"> <!-- Navigace bude "přilepena" na horní část stránky -->
+                <h1>PojištěníApp</h1>
+                <ul class="nav"> <!-- Seznam odkazů v navigaci -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pojistenci">Pojištěnci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#o aplikaci">O aplikaci</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sekce s informacemi o pojištěncích -->
+        <section>
+            <h1>Pojištěnci</h1>
+            <table id="insuredTable"> <!-- Tabulka pro zobrazení seznamu pojištěnců -->
+                <thead>
+                    <tr>
+                        <th>Jméno a příjmení</th>
+                        <th>Telefon</th>
+                        <th>Věk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Zde bude seznam pojištěných -->
+                </tbody>
+            </table>
+
+
+            <!-- Formulář pro přidání nového pojištěnce -->
+            <h1>Nový pojištěnec</h1>
+            <div class="form-container"> <!-- Kontejner pro formulář -->
+                <div class="image-container clearfix">
+                    <img src="images/pojisteni_web.png" alt="Obrázek nového poištěnce"> <!-- Obrázek vlevo od formuláře -->
+                </div>
+                <form id="newInsuredForm"> <!-- ID formuláře pro přístup z JavaScriptu -->
+                    <div class="form-row">
+                        <div class="form-group col-sm-5">
+                            <label for="firstName">Jméno</label>
+                            <input type="text" class="form-control" placeholder="Jan" id="firstName" required> <!-- Vstupní pole pro jméno -->
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <label for="lastName">Příjmení</label>
+                            <input type="text" class="form-control" placeholder="Novák" id="lastName" required> <!-- Vstupní pole pro příjmení -->
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-5">
+                            <label for="age">Věk:</label>
+                            <input type="number" placeholder="31" class="form-control" id="age" required> <!-- Vstupní pole pro věk -->
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <label for="phoneNumber">Telefon:</label>
+                            <input type="text" class="form-control" placeholder="731 584 972" id="phoneNumber" required> <!-- Vstupní pole pro telefon -->
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Uložit</button> <!-- Tlačítko pro odeslání formuláře -->
+                    </div>
+                </form>
+        </section>
+    </article>
+
+    <!-- Skripty pro Bootstrap a vlastní JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+
+/*Styly pro celou stránku*/
+body {  
+    font-family: Arial; 
+    font-size: 0.9em;
+}
+
+/* Styly pro navigační pruh */
+nav {
+    background-color: #353a40; /* Barva pozadí */
+    color: #cdd0d4; /* Barva textu */
+    padding: 5px; /* Odsazení uvnitř pruhu */
+    display: flex; /* Nastaví prvek <nav> na flex kontejner */
+    font-size: 0.9em;
+}
+
+/* Styly pro nadpis v navigaci */
+nav h1 {
+    margin: 6px; /* Odstraní odsazení kolem nadpisu "Pojištění" */
+    padding-right: 70px;
+    font-size: 1.3em;
+}
+
+/*Styly pro sekci*/
+section {
+    margin: 40px;
+    
+}
+
+/* Styly pro nadpis v sekci */
+section h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+
+/* Styly pro odkazy v navigaci */
+.nav-link {
+    color: #cdd0d4;
+}
+
+/* Efekt po najetí myší na odkaz v navigaci*/
+nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Styly pro neaktivní odkaz v navigaci */
+nav .nav-link.disabled {
+    color: #74797f;
+}
+
+/* Styly pro tabulku */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Roztáhnout tabulku přes celou šířku stránky */
+    margin: 0 auto;
+    margin-bottom: 5em;
+    font-size: 0.95em;
+    box-shadow: 3px 3px 8px #353a40; /*stín tabulky*/
+}
+
+/* Buňky*/
+th, td {
+    border: 1px solid black;
+    padding: 8px; /* Odsazení uvnitř buněk tabulky */
+    
+}
+
+
+/*Nadpisy tabulky*/
+th {
+    color: rgb(0, 0, 0); /* Barva textu v hlavičkách tabulky */
+    text-align: left; /* Zarovnání textu v nadpisech vlevo */
+}
+
+/*První buňka v každém řádku*/
+td:first-child {
+    font-weight:bold; /* tučné písmo*/
+}
+
+
+
+/*Kontejner s obrázkem*/
+.image-container {
+    float: left; /* Obrázek bude umístěn vlevo a text bude obtékat */
+    margin-right: 4em;
+}
+
+/* Obrázek v kontejneru*/
+.image-container img {
+    height: 9em;
+    width: 9em;
+    border: 1px solid black; /* Šířka a barva rámečku */
+}
+
+/*Tlačítko*/
+.btn {
+    padding: 7px 50px;
+}
+
+/* Skupina formulářových prvků s šířkou 5 sloupců*/
+.form-group.col-sm-5 {
+    padding-right: 1em; /* Mezera mezi jednotlivými inputy */
+    box-sizing: content-box; /* Šířka elementu bude zahrnovat pouze obsah a mezery */
+}
